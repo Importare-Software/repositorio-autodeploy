@@ -1,8 +1,6 @@
-git pull origin master
+git pull
 
-if [ -f /var/www/html/] then
-    sudo rm -r /var/www/html/
-fi
+sudo rm -rf /var/www/html/*
 
 sudo cp ./ /var/www/html/ -r
 
