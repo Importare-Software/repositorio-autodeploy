@@ -1,3 +1,7 @@
+#!/bin/bash
+
+cd ~/Docker/Proyectos/prueba/repositorio-autodeploy
+
 git checkout master
 git pull origin master
 
@@ -9,4 +13,6 @@ git pull origin master
 
 # sudo service nginx restart
 
-touch hola.txt
+pwd
+
+echo "Server stopped"
