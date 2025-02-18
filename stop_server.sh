@@ -1,6 +1,10 @@
 #!/bin/bash
 
+pwd
+
 cd ~/Docker/Proyectos/prueba/repositorio-autodeploy
+
+pwd
 
 git checkout master
 git pull origin master
