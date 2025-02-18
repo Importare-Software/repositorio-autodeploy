@@ -27,3 +27,13 @@ jobs:
             --parameters 'commands=["bash /home/ubuntu/Docker/Proyectos/prueba/repositorio-autodeploy/stop_server.sh"]' \
             --region us-east-1 \
             --output text
+
+
+
+
+
+
+
+
+
+            
