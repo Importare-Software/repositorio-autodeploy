@@ -1,4 +1,8 @@
-cd ~/Docker/Proyectos/prueba/repositorio-autodeploy
+pwd
+
+ls
+
+cd /home/ubuntu/Docker/Proyectos/prueba/repositorio-autodeploy
 
 git checkout master
 git pull origin master
