@@ -24,6 +24,6 @@ jobs:
           aws ssm send-command \
             --document-name "AWS-RunShellScript" \
             --targets '[{"Key":"instanceIds","Values":["i-029ce131c546e1690"]}]' \
-            --parameters 'commands=["bash ~/Docker/Proyectos/prueba/repositorio-autodeploy/stop_server.sh"]' \
+            --parameters 'commands=["bash /home/ubuntu/Docker/Proyectos/prueba/repositorio-autodeploy/stop_server.sh"]' \
             --region us-east-1 \
             --output text
