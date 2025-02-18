@@ -1,0 +1,21 @@
+name: Deploy to Develop
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code 
+        uses: actions/checkout@v3
+      - name: Deploy to Server
+        env:
+          PEM_FILE: ${{ secrets.PEM_FILE }}
+        run: |
+          echo "${PEM_FILE}" > deploy_key.pem
+          chmod 600 deploy_key.pem
+          ssh -o StrictHostKeyChecking=no -i deploy_key.pem ubuntu@18.234.72.157 'bash -s' < stop_server.sh
