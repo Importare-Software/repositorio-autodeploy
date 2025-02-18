@@ -11,3 +11,4 @@ sudo mv /var/www/html/index.html /var/www/html/index.nginx-debian.html
 
 sudo service nginx restart
 
+pwd
